@@ -1,0 +1,6 @@
+Feature: Sauce demo login feature
+
+  Scenario: Users logs in to Sauce demo page
+  Given user open main page
+  When user logs in with credentials: "login" and "password"
+  Then user is authenticated

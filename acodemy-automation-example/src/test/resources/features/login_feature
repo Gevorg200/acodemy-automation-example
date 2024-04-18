@@ -1,0 +1,13 @@
+@Login-feature @QAB6-349
+Feature: Sauce demo login feature
+
+  @regression @smoke
+  Scenario: Users logs in to Sauce demo page
+  Given user open main page
+  When user logs in with credentials: "<login>" and "<password>"
+  Then user is authenticated
+  Examples:
+  | login                   | password     |
+  | standart_user           | secret_sauce |
+  | performance_glitch_user | secret_sauce |
+  | visual_user             | secret_sauce |
